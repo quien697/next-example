@@ -1,26 +1,18 @@
 import Link from 'next/link';
-import { useRouter } from 'next/router';
-import styles from './Header.module.css'
+import styles from './Header.module.css';
 
 const Header = () => {
-    const router = useRouter();
     return (
         <div className={styles.main}>
             <ul>
                 <li>
-                    <Link href="/">
-                        <a>Home</a>
-                    </Link>
+                    <Link href="/">Home</Link>
                 </li>
                 <li>
-                    <Link href="/about">
-                        <a>About Us</a>
-                    </Link>
+                    <Link href="/about">About Us</Link>
                 </li>
                 <li>
-                    <Link href="/product">
-                        <a>Product</a>
-                    </Link>
+                    <Link href="/product">Product</Link>
                 </li>
             </ul>
         </div>
